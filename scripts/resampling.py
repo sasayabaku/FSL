@@ -8,13 +8,15 @@ from preprocessing.resample import resampling_MNI
 """
 Please change root directory
 """
-ROOT_DIR = '/Users/sasayabaku/data'
+ROOT_DIR = '/var/share/nifti_img/3DEGIR_SAG/merged'
 
 if __name__ == '__main__':
 
     subjects = os.listdir(ROOT_DIR)
 
     for subject in subjects:
+
+        print(subject)
 
         nifti_files = os.listdir(os.path.join(ROOT_DIR, subject))
 
